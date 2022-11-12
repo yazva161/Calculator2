@@ -2,7 +2,6 @@ package Calculator_2;
 
 public class NumbersArabicIsRoman {
 
-   /* private String [] expr;*/
     private int a, b;
     private static boolean isRoman;
 
@@ -37,9 +36,7 @@ public class NumbersArabicIsRoman {
                 actionIndex = i;
                 break;
             }
-            if (actionIndex == -1) {
-                throw new MyException("Строка не является выражением.");
-            }
+          
         }
         return actionIndex;
     }
