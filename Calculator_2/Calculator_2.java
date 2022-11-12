@@ -11,7 +11,10 @@ public class Calculator_2 {
         System.out.println("Введите выражение с операндами от нуля до десяти: ");
         String expression = sc.nextLine();
 
-
-        nar.resultExpr(expression);
+    `   try {
+            nar.resultExpr(expression);
+        } catch (ArrayIndexOutOfBoundsException e){
+            throw new ArrayIndexOutOfBoundsException("Строка не является выражением.");
+        }
     }
 }
